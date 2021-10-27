@@ -7,27 +7,7 @@ In this work, we present an implementation of the Harris corner detector to dete
 
 A corner is a point whose local neighborhood stands in two dominant and different edge directions. In other words, a corner can be interpreted as the junction of two edges, where and edge is sudden change in image brightness. Corners are the important deatures in the image, and they are generally termed as interest points which are invariant to translation, rotation and illumination.
 
-The idea behind the Harris corner detection algorithm is to locate interest points where the surrounding neighbourhood shows edges in more the one direction. The basic idea is to find the difference in intensity for a displacement of (u,v) in all directions which is expressed as below :
-
-[image2]: ./assets/E.png "E"
-![alt text][image2]
-
-Window function is either a rectangular window or a gaussian window which gives weights to pixels at (x,y). The above equation can be further approximated using Taylor expansion which gives us the final formula as :
-
-[image3]: ./assets/E_final.png "E"
-![alt text][image3]
-
-where : 
-
-[image4]: ./assets/M.png "M"
-![alt text][image4]
-
-Ix and Iy are image derivatives in x and y directions respectively. One can compute the derivative using the sobel kernel.
-
-Then we finally find the Harris response R given by :
-
-[image5]: ./assets/R.png "R"
-![alt text][image5]
+The idea behind the Harris corner detection algorithm is to locate interest points where the surrounding neighbourhood shows edges in more the one direction. The basic idea is to find the difference in intensity for a displacement of (u,v) in all directions.
 
 ## Process of Harris Corner Detection Algorithm :
 
