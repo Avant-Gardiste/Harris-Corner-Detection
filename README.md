@@ -1,9 +1,8 @@
 # Harris Corner Detector :
 ## Introduction : 
-In this work, we present an implementation of the Harris corner detector to detect corners in a chessboard image. This feature detector relies on the analysis of the eigenvalues of the autocorrelation matrix. The algorithm comprises several steps, including several measures for the classification of corners, a generic non-maximum suppression method for selecting interest points, and the possibility to obtain the corners position with subpixel accuaracy.
+In this work, we present an implementation of the Harris corner detector to detect corners in a chessboard image. This feature detector relies on the analysis of the eigenvalues of the autocorrelation matrix. The algorithm comprises several steps, including several measures for the classification of corners, a generic non-maximum suppression method for selecting interest points, and the possibility to obtain the corners position with subpixel accuracy.
 
-[image1]: ./Input/chessboard00.png "Input Image"
-![alt text][image1]
+<div style="text-align:center"><img src="./Input/chessboard00.png" /></div>
 
 A corner is a point whose local neighborhood stands in two dominant and different edge directions. In other words, a corner can be interpreted as the junction of two edges, where and edge is sudden change in image brightness. Corners are the important deatures in the image, and they are generally termed as interest points which are invariant to translation, rotation and illumination.
 
@@ -24,6 +23,8 @@ The Harris Corner Detector algorithm in simple words is as follows :
 **Step 5:** Find all pixels that exceed a certain threshold are the local maxima within a certain window (to prevent redundant dupes of features)
 
 **Step 6:** Compute a feature descriptor of all such points.
+
+**Step 7:** Perform non maximum-suppression.
 
 ## Output : 
 
