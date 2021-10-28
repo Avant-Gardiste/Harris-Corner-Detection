@@ -3,7 +3,7 @@
 In this work, we present an implementation of the Harris corner detector to detect corners in a chessboard image. This feature detector relies on the analysis of the eigenvalues of the autocorrelation matrix. The algorithm comprises several steps, including several measures for the classification of corners, a generic non-maximum suppression method for selecting interest points, and the possibility to obtain the corners position with subpixel accuracy.
 
 <p align="center">
-  <img width="560" height="400" src="./Input/chessboard00.png">
+  <img width="460" height="300" src="./Input/chessboard00.png">
 </p>
 
 A corner is a point whose local neighborhood stands in two dominant and different edge directions. In other words, a corner can be interpreted as the junction of two edges, where and edge is sudden change in image brightness. Corners are the important deatures in the image, and they are generally termed as interest points which are invariant to translation, rotation and illumination.
